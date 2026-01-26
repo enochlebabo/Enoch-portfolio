@@ -1,4 +1,4 @@
-import { ArrowDown, Github, Linkedin, Mail } from 'lucide-react';
+import { ArrowDown, Github, Linkedin, Mail, Download } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 export const Hero = () => {
@@ -54,6 +54,14 @@ export const Hero = () => {
               className="px-8 py-4 bg-primary text-primary-foreground rounded-lg font-medium hover:bg-primary/90 transition-all glow-primary"
             >
               View Projects
+            </a>
+            <a
+              href="/Seabata_Enoch_Lebabo_CV.html"
+              download="Seabata_Enoch_Lebabo_CV.html"
+              className="px-8 py-4 border border-primary text-primary rounded-lg font-medium hover:bg-primary/10 transition-all flex items-center gap-2"
+            >
+              <Download className="w-5 h-5" />
+              Download CV
             </a>
             <a
               href="#contact"
