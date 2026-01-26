@@ -1,104 +1,63 @@
-import { ArrowDown, Github, Linkedin, Mail, Download } from 'lucide-react';
+import { Github, Linkedin, Mail, Download, MapPin, Phone } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 export const Hero = () => {
   return (
-    <section className="min-h-screen bg-hero-gradient flex items-center relative overflow-hidden">
-      {/* Background decorative elements */}
-      <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/5 rounded-full blur-3xl animate-float" />
-      <div className="absolute bottom-1/4 right-1/4 w-72 h-72 bg-primary/10 rounded-full blur-3xl animate-float" style={{ animationDelay: '-3s' }} />
-      
-      <div className="section-container relative z-10">
+    <section className="min-h-[90vh] flex items-center bg-background pt-20">
+      <div className="section-container">
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
+          initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          className="max-w-4xl"
+          transition={{ duration: 0.6 }}
+          className="max-w-3xl"
         >
-          <motion.p
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.2 }}
-            className="text-primary font-medium mb-4 tracking-wide"
-          >
-            WELCOME TO MY PORTFOLIO
-          </motion.p>
+          <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-4 leading-tight">
+            SEABATA ENOCH LEBABO
+          </h1>
           
-          <motion.h1
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.3, duration: 0.8 }}
-            className="font-display text-5xl md:text-7xl lg:text-8xl font-bold mb-6 leading-tight"
-          >
-            Mr. Enoch{' '}
-            <span className="text-gradient">Lebabo</span>
-          </motion.h1>
+          <p className="text-xl text-muted-foreground mb-6">
+            Curriculum Vitae
+          </p>
           
-          <motion.p
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.5, duration: 0.8 }}
-            className="text-xl md:text-2xl text-muted-foreground mb-8 leading-relaxed max-w-2xl"
-          >
-            IT Engineer | Full-Stack Developer | AI & Data Systems Enthusiast | Aspiring Tech Entrepreneur
-          </motion.p>
+          <div className="flex flex-wrap items-center gap-4 text-sm text-muted-foreground mb-8">
+            <span className="flex items-center gap-1.5">
+              <MapPin size={16} />
+              Anand, INDIA 388120
+            </span>
+            <a href="mailto:enochlebabo@gmail.com" className="flex items-center gap-1.5 hover:text-primary transition-colors">
+              <Mail size={16} />
+              enochlebabo@gmail.com
+            </a>
+            <a href="tel:+916359289443" className="flex items-center gap-1.5 hover:text-primary transition-colors">
+              <Phone size={16} />
+              +916359289443
+            </a>
+            <a href="https://in.linkedin.com/in/enoch-lebabo-04b651266" target="_blank" rel="noopener noreferrer" className="flex items-center gap-1.5 hover:text-primary transition-colors">
+              <Linkedin size={16} />
+              LinkedIn
+            </a>
+            <a href="https://github.com/enochlebabo" target="_blank" rel="noopener noreferrer" className="flex items-center gap-1.5 hover:text-primary transition-colors">
+              <Github size={16} />
+              GitHub
+            </a>
+          </div>
           
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.7, duration: 0.8 }}
-            className="flex flex-wrap gap-4 mb-12"
-          >
-            <a
-              href="#projects"
-              className="px-8 py-4 bg-primary text-primary-foreground rounded-lg font-medium hover:bg-primary/90 transition-all glow-primary"
-            >
+          <div className="flex flex-wrap gap-3">
+            <a href="#projects" className="btn-primary">
               View Projects
             </a>
             <a
               href="/Seabata_Enoch_Lebabo_CV.html"
               download="Seabata_Enoch_Lebabo_CV.html"
-              className="px-8 py-4 border border-primary text-primary rounded-lg font-medium hover:bg-primary/10 transition-all flex items-center gap-2"
+              className="btn-outline flex items-center gap-2"
             >
-              <Download className="w-5 h-5" />
+              <Download className="w-4 h-4" />
               Download CV
             </a>
-            <a
-              href="#contact"
-              className="px-8 py-4 border border-border rounded-lg font-medium hover:bg-secondary transition-all"
-            >
+            <a href="#contact" className="btn-outline">
               Get in Touch
             </a>
-          </motion.div>
-          
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.9 }}
-            className="flex items-center gap-6"
-          >
-            <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
-              <Github size={22} />
-            </a>
-            <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
-              <Linkedin size={22} />
-            </a>
-            <a href="#contact" className="text-muted-foreground hover:text-primary transition-colors">
-              <Mail size={22} />
-            </a>
-          </motion.div>
-        </motion.div>
-        
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 1.2 }}
-          className="absolute bottom-8 left-1/2 -translate-x-1/2"
-        >
-          <a href="#about" className="flex flex-col items-center gap-2 text-muted-foreground hover:text-foreground transition-colors">
-            <span className="text-sm">Scroll</span>
-            <ArrowDown size={20} className="animate-bounce" />
-          </a>
+          </div>
         </motion.div>
       </div>
     </section>
