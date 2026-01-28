@@ -81,24 +81,24 @@
 
 @layer components {
   .section-container {
-    @apply max-w-5xl mx-auto px-6 py-16 md:py-20;
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 md:py-20 lg:py-24;
   }
 
   .section-title {
-    @apply text-2xl md:text-3xl font-bold text-foreground mb-2;
+    @apply text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-foreground mb-2;
     font-family: 'Plus Jakarta Sans', sans-serif;
   }
 
   .section-subtitle {
-    @apply text-muted-foreground mb-8;
+    @apply text-sm sm:text-base text-muted-foreground mb-6 sm:mb-8;
   }
 
   .section-divider {
-    @apply w-12 h-1 bg-primary mb-6;
+    @apply w-10 sm:w-12 h-1 bg-primary mb-4 sm:mb-6;
   }
 
   .card-professional {
-    @apply bg-card border border-border rounded-lg p-6 transition-all duration-200;
+    @apply bg-card border border-border rounded-lg p-4 sm:p-6 transition-all duration-200;
     box-shadow: var(--shadow-sm);
   }
 
@@ -107,7 +107,7 @@
   }
 
   .btn-primary {
-    @apply px-6 py-3 bg-primary text-primary-foreground rounded-md font-medium transition-all duration-200;
+    @apply px-4 sm:px-6 py-2.5 sm:py-3 bg-primary text-primary-foreground rounded-md font-medium transition-all duration-200 text-sm sm:text-base;
   }
 
   .btn-primary:hover {
@@ -115,7 +115,7 @@
   }
 
   .btn-outline {
-    @apply px-6 py-3 border border-primary text-primary rounded-md font-medium transition-all duration-200;
+    @apply px-4 sm:px-6 py-2.5 sm:py-3 border border-primary text-primary rounded-md font-medium transition-all duration-200 text-sm sm:text-base;
   }
 
   .btn-outline:hover {
@@ -123,7 +123,7 @@
   }
 
   .skill-tag {
-    @apply text-sm px-3 py-1.5 bg-secondary text-foreground rounded-md;
+    @apply text-xs sm:text-sm px-2 sm:px-3 py-1 sm:py-1.5 bg-secondary text-foreground rounded-md;
   }
 
   .nav-link {

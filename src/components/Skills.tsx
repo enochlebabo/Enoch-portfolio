@@ -34,8 +34,8 @@ export const Skills = () => {
       >
         <div className="section-divider" />
         <h2 className="section-title">Technical Skills</h2>
-        
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4 sm:gap-6 mt-6 sm:mt-8">
           {skillCategories.map((category, index) => (
             <motion.div
               key={category.title}
@@ -43,9 +43,10 @@ export const Skills = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.1, duration: 0.5 }}
+              className="card-professional"
             >
-              <h3 className="font-semibold text-foreground mb-3">{category.title}</h3>
-              <div className="flex flex-wrap gap-2">
+              <h3 className="font-semibold text-foreground mb-3 text-sm sm:text-base">{category.title}</h3>
+              <div className="flex flex-wrap gap-1.5 sm:gap-2">
                 {category.skills.map((skill) => (
                   <span key={skill} className="skill-tag">
                     {skill}
