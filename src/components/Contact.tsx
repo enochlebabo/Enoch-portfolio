@@ -65,11 +65,11 @@ export const Contact = () => {
       >
         <div className="section-divider" />
         <h2 className="section-title">Get in Touch</h2>
-        <p className="section-subtitle max-w-xl">
+        <p className="section-subtitle max-w-xl text-sm sm:text-base">
           I'm always open to discussing new projects, creative ideas, or opportunities to collaborate.
         </p>
-        
-        <div className="grid lg:grid-cols-2 gap-8 mt-8">
+
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 mt-6 sm:mt-8">
           {/* Contact Form */}
           <motion.form
             onSubmit={handleSubmit}
@@ -77,15 +77,15 @@ export const Contact = () => {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.2 }}
-            className="card-professional space-y-4"
+            className="card-professional space-y-3 sm:space-y-4"
           >
-            <h3 className="text-lg font-semibold text-foreground mb-4">Send a Message</h3>
+            <h3 className="text-base sm:text-lg font-semibold text-foreground mb-3 sm:mb-4">Send a Message</h3>
             <div>
               <Input
                 placeholder="Your Name"
                 value={name}
                 onChange={(e) => setName(e.target.value)}
-                className="bg-background border-border"
+                className="bg-background border-border text-sm sm:text-base"
                 maxLength={100}
               />
             </div>
@@ -95,7 +95,7 @@ export const Contact = () => {
                 placeholder="Your Email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                className="bg-background border-border"
+                className="bg-background border-border text-sm sm:text-base"
                 maxLength={255}
               />
             </div>
@@ -104,7 +104,7 @@ export const Contact = () => {
                 placeholder="Your Message"
                 value={message}
                 onChange={(e) => setMessage(e.target.value)}
-                className="bg-background border-border min-h-[120px]"
+                className="bg-background border-border min-h-[100px] sm:min-h-[120px] text-sm sm:text-base"
                 maxLength={1000}
               />
             </div>
@@ -128,80 +128,80 @@ export const Contact = () => {
           </motion.form>
 
           {/* Contact Info */}
-          <div className="space-y-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-3 sm:gap-4">
             <motion.a
               href="mailto:enochlebabo@gmail.com"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.1 }}
-              className="card-professional flex items-center gap-4 hover:border-primary cursor-pointer"
+              className="card-professional flex items-center gap-3 sm:gap-4 hover:border-primary cursor-pointer"
             >
-              <div className="p-3 bg-primary/10 rounded-lg">
-                <Mail className="w-5 h-5 text-primary" />
+              <div className="p-2 sm:p-3 bg-primary/10 rounded-lg flex-shrink-0">
+                <Mail className="w-4 h-4 sm:w-5 sm:h-5 text-primary" />
               </div>
-              <div>
-                <p className="text-sm text-muted-foreground">Email</p>
-                <p className="text-foreground font-medium">enochlebabo@gmail.com</p>
+              <div className="min-w-0">
+                <p className="text-xs sm:text-sm text-muted-foreground">Email</p>
+                <p className="text-foreground font-medium text-sm sm:text-base truncate">enochlebabo@gmail.com</p>
               </div>
             </motion.a>
-            
+
             <motion.a
               href="tel:+916359289443"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.2 }}
-              className="card-professional flex items-center gap-4 hover:border-primary cursor-pointer"
+              className="card-professional flex items-center gap-3 sm:gap-4 hover:border-primary cursor-pointer"
             >
-              <div className="p-3 bg-primary/10 rounded-lg">
-                <Phone className="w-5 h-5 text-primary" />
+              <div className="p-2 sm:p-3 bg-primary/10 rounded-lg flex-shrink-0">
+                <Phone className="w-4 h-4 sm:w-5 sm:h-5 text-primary" />
               </div>
               <div>
-                <p className="text-sm text-muted-foreground">Phone</p>
-                <p className="text-foreground font-medium">+91 6359289443</p>
+                <p className="text-xs sm:text-sm text-muted-foreground">Phone</p>
+                <p className="text-foreground font-medium text-sm sm:text-base">+91 6359289443</p>
               </div>
             </motion.a>
-            
+
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.3 }}
-              className="card-professional flex items-center gap-4"
+              className="card-professional flex items-center gap-3 sm:gap-4"
             >
-              <div className="p-3 bg-primary/10 rounded-lg">
-                <MapPin className="w-5 h-5 text-primary" />
+              <div className="p-2 sm:p-3 bg-primary/10 rounded-lg flex-shrink-0">
+                <MapPin className="w-4 h-4 sm:w-5 sm:h-5 text-primary" />
               </div>
               <div>
-                <p className="text-sm text-muted-foreground">Location</p>
-                <p className="text-foreground font-medium">Anand, Gujarat, India</p>
+                <p className="text-xs sm:text-sm text-muted-foreground">Location</p>
+                <p className="text-foreground font-medium text-sm sm:text-base">Anand, Gujarat, India</p>
               </div>
             </motion.div>
-            
+
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.4 }}
-              className="card-professional flex items-center gap-6"
+              className="card-professional flex items-center justify-center sm:justify-start gap-4 sm:gap-6"
             >
               <a
                 href="https://github.com/enochlebabo"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors"
+                className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors text-sm sm:text-base"
               >
-                <Github className="w-5 h-5" />
+                <Github className="w-4 h-4 sm:w-5 sm:h-5" />
                 <span>GitHub</span>
               </a>
               <a
                 href="https://in.linkedin.com/in/enoch-lebabo-04b651266"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors"
+                className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors text-sm sm:text-base"
               >
-                <Linkedin className="w-5 h-5" />
+                <Linkedin className="w-4 h-4 sm:w-5 sm:h-5" />
                 <span>LinkedIn</span>
               </a>
             </motion.div>

@@ -40,8 +40,8 @@ export const Experience = () => {
       >
         <div className="section-divider" />
         <h2 className="section-title">Professional Experience</h2>
-        
-        <div className="space-y-8 mt-8">
+
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8 mt-6 sm:mt-8">
           {experiences.map((exp, index) => (
             <motion.div
               key={exp.title}
@@ -49,17 +49,19 @@ export const Experience = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.1, duration: 0.5 }}
-              className="border-l-2 border-primary pl-6"
+              className="card-professional border-l-4 border-l-primary"
             >
-              <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-2">
-                <h3 className="text-xl font-semibold text-foreground">{exp.title}</h3>
-                <span className="text-sm text-muted-foreground">{exp.period}</span>
+              <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-2 gap-1">
+                <h3 className="text-lg sm:text-xl font-semibold text-foreground">{exp.title}</h3>
+                <span className="text-xs sm:text-sm text-muted-foreground">{exp.period}</span>
               </div>
-              <p className="text-primary font-medium mb-4">{exp.company} - {exp.location}</p>
+              <p className="text-primary font-medium mb-3 sm:mb-4 text-sm sm:text-base">
+                {exp.company} - {exp.location}
+              </p>
               <ul className="space-y-2">
                 {exp.responsibilities.map((resp, i) => (
-                  <li key={i} className="flex items-start gap-2 text-muted-foreground">
-                    <span className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0" />
+                  <li key={i} className="flex items-start gap-2 text-muted-foreground text-xs sm:text-sm">
+                    <span className="w-1.5 h-1.5 bg-primary rounded-full mt-1.5 sm:mt-2 flex-shrink-0" />
                     {resp}
                   </li>
                 ))}

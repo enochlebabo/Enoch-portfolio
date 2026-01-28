@@ -36,8 +36,8 @@ export const Projects = () => {
       >
         <div className="section-divider" />
         <h2 className="section-title">Key Academic & Personal Projects</h2>
-        
-        <div className="grid md:grid-cols-2 gap-6 mt-8">
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-4 sm:gap-6 mt-6 sm:mt-8">
           {projects.map((project, index) => (
             <motion.div
               key={project.title}
@@ -45,16 +45,16 @@ export const Projects = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.1, duration: 0.5 }}
-              className="card-professional"
+              className="card-professional flex flex-col"
             >
-              <h3 className="text-lg font-semibold text-foreground mb-1">{project.title}</h3>
+              <h3 className="text-base sm:text-lg font-semibold text-foreground mb-1">{project.title}</h3>
               {project.subtitle && (
-                <p className="text-sm text-primary mb-2">{project.subtitle}</p>
+                <p className="text-xs sm:text-sm text-primary mb-2">{project.subtitle}</p>
               )}
-              <p className="text-muted-foreground text-sm mb-4 leading-relaxed">
+              <p className="text-muted-foreground text-xs sm:text-sm mb-4 leading-relaxed flex-1">
                 {project.description}
               </p>
-              <div className="flex flex-wrap gap-2">
+              <div className="flex flex-wrap gap-1.5 sm:gap-2">
                 {project.tech.map((tech) => (
                   <span key={tech} className="text-xs px-2 py-1 bg-secondary rounded text-muted-foreground">
                     {tech}
