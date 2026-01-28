@@ -66,9 +66,9 @@ export const Hero = () => {
               <a href="#projects" className="btn-primary">
                 View Projects
               </a>
-              <a href="/Seabata_Enoch_Lebabo_CV.html" download="Seabata_Enoch_Lebabo_CV.html" className="btn-outline flex items-center gap-2">
+              <a href="/Seabata_Enoch_Lebabo_Resume.pdf" download="Seabata_Enoch_Lebabo_Resume.pdf" className="btn-outline flex items-center gap-2">
                 <Download className="w-4 h-4" />
-                  CLICK TO VIEW CV
+                Download My Resume
               </a>
               <a href="#contact" className="btn-outline">
                 Get in Touch
