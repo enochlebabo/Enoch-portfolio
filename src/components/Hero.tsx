@@ -1,35 +1,36 @@
 import { Github, Linkedin, Mail, Download, MapPin, Phone } from 'lucide-react';
 import { motion } from 'framer-motion';
 import headshot from '@/assets/headshot.jpg';
-
 export const Hero = () => {
-  return (
-    <section className="min-h-[90vh] flex items-center bg-background pt-20">
+  return <section className="min-h-[90vh] flex items-center bg-background pt-20">
       <div className="section-container">
         <div className="flex flex-col lg:flex-row items-center gap-12">
           {/* Headshot Photo */}
-          <motion.div
-            initial={{ opacity: 0, scale: 0.9 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.6 }}
-            className="flex-shrink-0"
-          >
+          <motion.div initial={{
+          opacity: 0,
+          scale: 0.9
+        }} animate={{
+          opacity: 1,
+          scale: 1
+        }} transition={{
+          duration: 0.6
+        }} className="flex-shrink-0">
             <div className="w-48 h-48 md:w-64 md:h-64 rounded-full overflow-hidden border-4 border-primary shadow-xl">
-              <img 
-                src={headshot} 
-                alt="Seabata Enoch Lebabo - Professional Headshot" 
-                className="w-full h-full object-cover"
-              />
+              <img src={headshot} alt="Seabata Enoch Lebabo - Professional Headshot" className="w-full h-full object-cover" />
             </div>
           </motion.div>
           
           {/* Content */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-            className="flex-1 text-center lg:text-left"
-          >
+          <motion.div initial={{
+          opacity: 0,
+          y: 20
+        }} animate={{
+          opacity: 1,
+          y: 0
+        }} transition={{
+          duration: 0.6,
+          delay: 0.2
+        }} className="flex-1 text-center lg:text-left">
             <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-4 leading-tight">
               SEABATA ENOCH LEBABO
             </h1>
@@ -65,13 +66,9 @@ export const Hero = () => {
               <a href="#projects" className="btn-primary">
                 View Projects
               </a>
-              <a
-                href="/Seabata_Enoch_Lebabo_CV.html"
-                download="Seabata_Enoch_Lebabo_CV.html"
-                className="btn-outline flex items-center gap-2"
-              >
+              <a href="/Seabata_Enoch_Lebabo_CV.html" download="Seabata_Enoch_Lebabo_CV.html" className="btn-outline flex items-center gap-2">
                 <Download className="w-4 h-4" />
-                Download CV
+                  CLICK TO VIEW CV
               </a>
               <a href="#contact" className="btn-outline">
                 Get in Touch
@@ -80,6 +77,5 @@ export const Hero = () => {
           </motion.div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
