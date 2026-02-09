@@ -34,7 +34,7 @@ export const Education = () => {
             <div className="flex-1">
               <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-1 sm:gap-2">
                 <h3 className="text-base sm:text-lg lg:text-xl font-semibold text-foreground">
-                  Bachelor of Technology: Information Technology (2022-2026)
+                  Bachelor of Engineering: Information Technology (2022-2026)
                 </h3>
                 <span className="text-xs sm:text-sm text-muted-foreground">Expected: 08/2026</span>
               </div>
