@@ -8,7 +8,7 @@ const projects = [
   },
   {
     title: 'Retinal Diagnosis using Deep Learning',
-    description: 'Created deep learning models for automated disease detection from retinal scans. The system was designed to aid in the early diagnosis of common retinal conditions.',
+    description: 'Intergrated deep learning models for automated disease detection from retinal scans. The system was designed to aid in the early diagnosis of common retinal conditions.',
     tech: ['Deep Learning', 'Python', 'Medical Imaging', 'CNN'],
   },
   {
