@@ -3,11 +3,11 @@ import { motion } from 'framer-motion';
 const skillCategories = [
   {
     title: 'Languages',
-    skills: ['Dart', 'Python', 'C#', 'C++', 'SQL', 'JavaScript', 'TypeScript'],
+    skills: ['Dart', 'Python', 'C#', 'C++', 'SQL', 'JavaScript', 'TypeScript', 'React'],
   },
   {
     title: 'Frameworks & Libraries',
-    skills: ['Flutter', 'Django', 'OpenCV', 'TensorFlow'],
+    skills: ['Flutter', 'Django', 'OpenCV', 'TensorFlow', 'Flask'],
   },
   {
     title: 'Databases',
@@ -15,7 +15,7 @@ const skillCategories = [
   },
   {
     title: 'Tools & Platforms',
-    skills: ['Git', 'GitHub', 'Android Studio', 'VS Code', 'Xcode', 'PyCharm'],
+    skills: ['Git', 'GitHub', 'Android Studio', 'VS Code', 'Xcode', 'PyCharm','Postman'],
   },
   {
     title: 'Methodologies',
