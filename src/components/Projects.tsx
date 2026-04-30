@@ -59,6 +59,73 @@ export const Projects = () => {
         <div className="section-divider" />
         <h2 className="section-title">Key Academic & Personal Projects</h2>
 
+        {/* Featured published research project */}
+        <motion.article
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
+          className="card-professional border-l-4 border-l-primary mt-6 sm:mt-8"
+        >
+          <div className="flex flex-wrap items-center gap-2 mb-2">
+            <span className="text-xs px-2 py-1 bg-primary text-primary-foreground rounded font-medium">
+              Featured · Published Research
+            </span>
+            <span className="text-xs text-muted-foreground">IJNRD · April 2026</span>
+          </div>
+          <h3 className="text-lg sm:text-xl font-semibold text-foreground">
+            {featuredProject.title}
+          </h3>
+          <p className="text-xs sm:text-sm text-primary mb-3">{featuredProject.subtitle}</p>
+          <p className="text-muted-foreground text-xs sm:text-sm leading-relaxed mb-4">
+            {featuredProject.description}
+          </p>
+
+          <ul className="grid grid-cols-1 sm:grid-cols-2 gap-x-4 gap-y-2 mb-4">
+            {featuredProject.highlights.map((h) => (
+              <li key={h} className="flex items-start gap-2 text-muted-foreground text-xs sm:text-sm">
+                <span className="w-1.5 h-1.5 bg-primary rounded-full mt-1.5 flex-shrink-0" />
+                {h}
+              </li>
+            ))}
+          </ul>
+
+          <div className="flex flex-wrap gap-1.5 sm:gap-2 mb-4">
+            {featuredProject.tech.map((tech) => (
+              <span key={tech} className="text-xs px-2 py-1 bg-secondary rounded text-muted-foreground">
+                {tech}
+              </span>
+            ))}
+          </div>
+
+          <div className="border-t border-border pt-4">
+            <div className="flex items-start gap-2 mb-3">
+              <FileText className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
+              <div>
+                <p className="text-xs sm:text-sm text-foreground font-medium italic">
+                  {featuredProject.publication.title}
+                </p>
+                <p className="text-xs text-muted-foreground mt-1">
+                  {featuredProject.publication.venue}
+                </p>
+              </div>
+            </div>
+            <a
+              href={featuredProject.publication.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-outline inline-flex items-center gap-2 text-xs sm:text-sm"
+            >
+              <ExternalLink className="w-4 h-4" />
+              View Published Paper
+            </a>
+          </div>
+        </motion.article>
+
+        <h3 className="text-lg sm:text-xl font-semibold text-foreground mt-10 mb-4">
+          Other Projects
+        </h3>
+
         <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-4 sm:gap-6 mt-6 sm:mt-8">
           {projects.map((project, index) => (
             <motion.div
