@@ -1,4 +1,26 @@
 import { motion } from 'framer-motion';
+import { FileText, ExternalLink } from 'lucide-react';
+
+const featuredProject = {
+  title: 'Smart Automated Food Delivery Ecosystem',
+  subtitle: 'Full-Stack System • Research Publication • Real-Time Platform',
+  description:
+    'A scalable, real-time food delivery platform built on a Flutter monorepo architecture with Firebase backend services and Augmented Reality (AR) for enhanced user interaction. Supports synchronized User (AR-enabled), Driver, Admin, and Restaurant applications with ~180ms real-time latency, 45% code reusability, and scalability to 10,000+ concurrent users.',
+  highlights: [
+    'Real-time order synchronization (~180ms latency)',
+    'Multi-role system (User, Driver, Vendor, Admin)',
+    'AR-based food visualization (60 FPS)',
+    'Live GPS tracking & analytics dashboard',
+    'Scalable to 10,000+ concurrent users',
+  ],
+  tech: ['Flutter', 'Dart', 'Firebase', 'TypeScript', 'ARCore', 'ARKit'],
+  publication: {
+    title:
+      '"Smart Automated Food Delivery Ecosystem: A Scalable Monorepo-Based Architecture with Augmented Reality and Firebase Integration"',
+    venue: 'International Journal of Novel Research and Development (IJNRD), Volume 11, Issue 4, April 2026',
+    url: 'https://ijnrd.org/viewpaperforall.php?paper=IJNRD2604481',
+  },
+};
 
 const projects = [
   {
