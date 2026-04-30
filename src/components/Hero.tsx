@@ -69,9 +69,13 @@ export const Hero = () => {
               <a href="#projects" className="btn-primary w-full sm:w-auto text-center">
                 View Projects
               </a>
-              <a href="/Seabata_Enoch_Lebabo_Resume.pdf" download="Seabata_Enoch_Lebabo_Resume.pdf" className="btn-outline flex items-center justify-center gap-2 w-full sm:w-auto">
+              <a href="/Enoch_Lebabo_Resume_2026.pdf" download="Enoch_Lebabo_Resume_2026.pdf" className="btn-outline flex items-center justify-center gap-2 w-full sm:w-auto">
                 <Download className="w-4 h-4" />
-                Download My Resume
+                Download Resume
+              </a>
+              <a href="/Enoch_Lebabo_Academic_CV_2026.pdf" download="Enoch_Lebabo_Academic_CV_2026.pdf" className="btn-outline flex items-center justify-center gap-2 w-full sm:w-auto">
+                <Download className="w-4 h-4" />
+                Download CV
               </a>
               <a href="#contact" className="btn-outline w-full sm:w-auto text-center">
                 Get in Touch
