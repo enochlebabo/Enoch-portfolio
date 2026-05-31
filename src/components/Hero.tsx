@@ -36,7 +36,7 @@ export const Hero = () => {
             </h1>
 
             <p className="text-lg sm:text-xl text-muted-foreground mb-4 sm:mb-6">
-              Curriculum Vitae
+              Portofolio 
             </p>
 
             <div className="flex flex-wrap items-center justify-center lg:justify-start gap-2 sm:gap-4 text-xs sm:text-sm text-muted-foreground mb-6 sm:mb-8">
