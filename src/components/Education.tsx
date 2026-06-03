@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 import { GraduationCap, Award } from 'lucide-react';
 
 const certifications = [
-  'Fullstack Development (Udemy)',
+  'The Complete Web Development Course - Build 15 Projects (Udemy)',
   'Information Security Fundamentals (Udemy)',
   'Advanced Flutter Development (Udemy)',
   'Flutter Multi Vendor App (Udemy)',
