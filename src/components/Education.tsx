@@ -57,7 +57,7 @@ export const Education = () => {
           >
             <div className="flex items-center gap-2 mb-3 sm:mb-4">
               <Award className="w-4 h-4 sm:w-5 sm:h-5 text-primary" />
-              <h3 className="font-semibold text-foreground text-sm sm:text-base">Certifications</h3>
+              <h3 className="font-semibold text-foreground text-sm sm:text-base">Certifications and Online courses</h3>
             </div>
             <ul className="space-y-2">
               {certifications.map((cert) => (
