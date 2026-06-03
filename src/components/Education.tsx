@@ -3,7 +3,7 @@ import { GraduationCap, Award } from 'lucide-react';
 
 const certifications = [
   'The Complete Web Development Course - Build 15 Projects (Udemy)',
-  'Information Security Fundamentals (Udemy)',
+  'Information Security in Python (Udemy)',
   'Advanced Flutter Development (Udemy)',
   'Flutter Multi Vendor App (Udemy)',
   'The Complete Flutter Development Bootcamp with Dart (Udemy)',
