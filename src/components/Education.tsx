@@ -5,6 +5,8 @@ const certifications = [
   'Fullstack Development (Udemy)',
   'Information Security Fundamentals (Udemy)',
   'Advanced Flutter Development (Udemy)',
+  'Flutter Multi Vendor App (Udemy)',
+  'The Complete Flutter Development Bootcamp with Dart (Udemy)',
 ];
 
 const languages = [
