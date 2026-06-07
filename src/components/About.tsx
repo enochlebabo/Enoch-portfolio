@@ -14,7 +14,7 @@ export const About = () => {
 
         <div className="max-w-4xl">
           <p className="text-muted-foreground leading-relaxed text-base sm:text-lg">
-            Final-year Bachelor of Technology (Information Technology) graduate with strong foundations in Software Engineering, Cloud Computing, Enterprise Infrastructure, Networking, Information Security, Data Analytics and Artificial Intelligence. Published researcher with practical industry experience in Flutter, Django, Firebase and scalable cloud-based systems.
+            Bachelor of Technology (Information Technology) graduate with strong foundations in Software Engineering, Cloud Computing, Enterprise Infrastructure, Networking, Information Security, Data Analytics and Artificial Intelligence. Published researcher with practical industry experience in Flutter, Django, Firebase and scalable cloud-based systems.
           </p>
           <p className="text-muted-foreground leading-relaxed text-base sm:text-lg mt-4">
             Demonstrated ability to develop real-time applications, collaborate in agile environments and solve complex technical challenges. Seeking to contribute technical expertise, innovation and leadership potential within a global technology organisation.
