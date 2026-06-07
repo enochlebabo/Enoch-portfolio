@@ -52,8 +52,13 @@ export const Hero = () => {
               </a>
               <a href="tel:+916359289443" className="flex items-center gap-1 sm:gap-1.5 hover:text-primary transition-colors">
                 <Phone size={14} className="sm:w-4 sm:h-4" />
-                <span className="hidden sm:inline">+916359289443</span>
-                <span className="sm:hidden">Call</span>
+                <span className="hidden sm:inline">+91 6359289443</span>
+                <span className="sm:hidden">IN</span>
+              </a>
+              <a href="tel:+26659195359" className="flex items-center gap-1 sm:gap-1.5 hover:text-primary transition-colors">
+                <Phone size={14} className="sm:w-4 sm:h-4" />
+                <span className="hidden sm:inline">+266 59195359</span>
+                <span className="sm:hidden">LS</span>
               </a>
               <a href="https://in.linkedin.com/in/enoch-lebabo-04b651266" target="_blank" rel="noopener noreferrer" className="flex items-center gap-1 sm:gap-1.5 hover:text-primary transition-colors">
                 <Linkedin size={14} className="sm:w-4 sm:h-4" />

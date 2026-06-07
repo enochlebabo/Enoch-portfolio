@@ -2,7 +2,21 @@ import { motion } from 'framer-motion';
 
 const experiences = [
   {
-    title: 'Flutter Developer',
+    title: 'Flutter Developer (Industry Project Collaboration)',
+    company: 'Venom Technologies Pvt. Ltd.',
+    location: 'Anand, India',
+    period: '12/2025 - 05/2026',
+    responsibilities: [
+      'Developed a scalable, real-time food delivery ecosystem on a Flutter monorepo architecture',
+      'Built synchronized User, Driver, Restaurant and Admin applications with Firebase backend services',
+      'Integrated Firebase Authentication, Cloud Firestore and Firebase Cloud Messaging',
+      'Implemented Google Maps APIs and live GPS tracking for orders and drivers',
+      'Engineered real-time order synchronization and analytics dashboards for operational insights',
+      'Contributed to architecture supporting 10,000+ concurrent users within an Agile process',
+    ],
+  },
+  {
+    title: 'Flutter Developer Intern',
     company: 'Technoguide Infosoft Pvt. Ltd',
     location: 'Anand, India',
     period: '06/2025 - 07/2025',

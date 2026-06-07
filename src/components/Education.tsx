@@ -11,7 +11,8 @@ const certifications = [
 
 const languages = [
   { name: 'English', level: 'Fluent' },
-  { name: 'Sotho/Zulu', level: 'Native / First Language' },
+  { name: 'Sesotho', level: 'Native' },
+  { name: 'Zulu', level: 'Intermediate' },
   { name: 'Hindi', level: 'B1 (Intermediate)' },
   { name: 'Gujarati', level: 'B1 (Intermediate)' },
 ];
@@ -36,12 +37,16 @@ export const Education = () => {
             <div className="flex-1">
               <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-1 sm:gap-2">
                 <h3 className="text-base sm:text-lg lg:text-xl font-semibold text-foreground">
-                  Bachelor of Technology: Information Technology[2022-2026]
+                  Bachelor of Technology: Information Technology [2022-2026]
                 </h3>
-                <span className="text-xs sm:text-sm text-muted-foreground">Expected: 08/2026</span>
+                <span className="text-xs sm:text-sm text-muted-foreground">Graduation: June 2026</span>
               </div>
               <p className="text-primary mt-1 text-sm sm:text-base">
                 BVM ENGINEERING COLLEGE (Affiliated to GTU) - Gujarat, India
+              </p>
+              <p className="text-muted-foreground mt-3 text-xs sm:text-sm leading-relaxed">
+                <span className="font-medium text-foreground">Relevant Coursework: </span>
+                Data Structures, Software Engineering, Computer Networks, Information Security, Cloud Computing, Database Systems, Artificial Intelligence, Machine Learning, Advanced Python, .NET, Java, Operating Systems, Data Warehousing and Data Mining, Big Data Analytics and Visualisation, Mobile Application Development.
               </p>
             </div>
           </div>
