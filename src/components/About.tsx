@@ -14,10 +14,10 @@ export const About = () => {
 
         <div className="max-w-4xl">
           <p className="text-muted-foreground leading-relaxed text-base sm:text-lg">
-            Highly motivated Software Engineer and Python/Flutter Developer with comprehensive expertise spanning the entire technological pipeline—from designing robust mobile and web applications to optimizing organizational IT infrastructure, networks, and databases.
+            Final-year Bachelor of Technology (Information Technology) graduate with strong foundations in Software Engineering, Cloud Computing, Enterprise Infrastructure, Networking, Information Security, Data Analytics and Artificial Intelligence. Published researcher with practical industry experience in Flutter, Django, Firebase and scalable cloud-based systems.
           </p>
           <p className="text-muted-foreground leading-relaxed text-base sm:text-lg mt-4">
-            Backed by practical internships and complex academic projects, I possess a strong foundation in API integration and user-centric UI/UX design. A collaborative, innovative team player, I am committed to leveraging agile methodologies to build high-quality, impactful software solutions.
+            Demonstrated ability to develop real-time applications, collaborate in agile environments and solve complex technical challenges. Seeking to contribute technical expertise, innovation and leadership potential within a global technology organisation.
           </p>
         </div>
       </motion.div>
