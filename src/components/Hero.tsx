@@ -60,7 +60,7 @@ export const Hero = () => {
                 <span className="hidden sm:inline">+266 59195359</span>
                 <span className="sm:hidden">LS</span>
               </a>
-              <a href="https://in.linkedin.com/in/enoch-lebabo-04b651266" target="_blank" rel="noopener noreferrer" className="flex items-center gap-1 sm:gap-1.5 hover:text-primary transition-colors">
+              <a href="https://www.linkedin.com/in/enochlebabo" target="_blank" rel="noopener noreferrer" className="flex items-center gap-1 sm:gap-1.5 hover:text-primary transition-colors">
                 <Linkedin size={14} className="sm:w-4 sm:h-4" />
                 LinkedIn
               </a>

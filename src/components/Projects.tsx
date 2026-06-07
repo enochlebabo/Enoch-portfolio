@@ -24,24 +24,18 @@ const featuredProject = {
 
 const projects = [
   {
-    title: 'Sign Language Detection System',
-    description: 'Developed a model to interpret sign language gestures in real-time. Utilized TensorFlow/Keras for model training on a custom dataset of gestures, achieving high accuracy.',
-    tech: ['TensorFlow', 'Keras', 'Python', 'Computer Vision'],
-  },
-  {
-    title: 'Retinal Diagnosis using Deep Learning',
-    description: 'Intergrated deep learning models for automated disease detection from retinal scans. The system was designed to aid in the early diagnosis of common retinal conditions.',
+    title: 'Retinal Disease Diagnosis Using Deep Learning',
+    description: 'Built deep learning models for automated disease detection from retinal scans, designed to aid in the early diagnosis of common retinal conditions.',
     tech: ['Deep Learning', 'Python', 'Medical Imaging', 'CNN'],
   },
   {
-    title: 'Flutter Applications',
-    subtitle: 'Todo, Weather & Livestock Management',
-    description: 'Built a feature-rich Todo App with persistent local storage and a Weather App that integrates with a live third-party API for up-to-date weather data based on geolocation.',
-    tech: ['Flutter', 'Dart', 'Firebase', 'REST APIs'],
+    title: 'Sign Language Detection System',
+    description: 'Developed a model to interpret sign language gestures in real-time using TensorFlow/Keras trained on a custom gesture dataset with high accuracy.',
+    tech: ['TensorFlow', 'Keras', 'Python', 'Computer Vision'],
   },
   {
-    title: 'Full-Stack E-Commerce System',
-    subtitle: 'Python/Django Frameworks',
+    title: 'Full Stack E-Commerce Platform',
+    subtitle: 'Python / Django',
     description: 'Engineered a complete, functional E-Commerce platform with user authentication, product catalog, shopping cart, and a mock payment gateway integration.',
     tech: ['Django', 'Python', 'PostgreSQL', 'REST API'],
   },

@@ -2,28 +2,28 @@ import { motion } from 'framer-motion';
 
 const skillCategories = [
   {
-    title: 'Languages',
-    skills: ['Dart', 'Python', 'R', 'C#', 'C++', 'SQL', 'JavaScript', 'TypeScript', 'React', 'Swift', 'Kotlin', 'Java'],
+    title: 'Programming',
+    skills: ['Python', 'Dart', 'JavaScript', 'TypeScript', 'SQL', 'Java', 'C', 'C++', '.NET'],
   },
   {
-    title: 'Frameworks & Libraries',
-    skills: ['Flutter', 'Django', 'OpenCV', 'TensorFlow', 'PyTorch', 'Flask'],
-  },
-  {
-    title: 'Data Science & Analytics',
-    skills: ['PyTorch', 'TensorFlow', 'Pandas', 'NumPy', 'Scikit-learn', 'Matplotlib', 'Seaborn', 'Plotly', 'Power BI', 'Tableau', 'R'],
+    title: 'Frameworks',
+    skills: ['Flutter', 'Django', 'React', 'TensorFlow', 'PyTorch', 'OpenCV'],
   },
   {
     title: 'Databases',
-    skills: ['NoSQL (Firebase)', 'SQL (PostgreSQL, MySQL)'],
+    skills: ['PostgreSQL', 'MySQL', 'Firebase'],
   },
   {
-    title: 'Tools & Platforms',
-    skills: ['Git', 'GitHub', 'Android Studio', 'VS Code', 'Xcode', 'PyCharm', 'Postman', 'Figma', 'Power BI', 'Tableau'],
+    title: 'Cloud & Infrastructure',
+    skills: ['Cloud Computing', 'Firebase', 'Distributed Systems', 'REST APIs'],
   },
   {
-    title: 'Methodologies',
-    skills: ['Agile', 'Project Management', 'UI/UX Design'],
+    title: 'Tools',
+    skills: ['Git', 'GitHub', 'Android Studio', 'VS Code', 'Postman', 'PyCharm', 'Figma', 'Xcode'],
+  },
+  {
+    title: 'Networking & Security',
+    skills: ['Computer Networks', 'Information Security', 'Access Control Fundamentals'],
   },
 ];
 
