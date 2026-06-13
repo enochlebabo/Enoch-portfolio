@@ -84,7 +84,7 @@ export const Hero = () => {
               </a>
               <a href="https://canva.link/gx4ol8xrfbg73th" target="_blank" rel="noopener noreferrer" className="btn-outline flex items-center justify-center gap-2 w-full sm:w-auto">
                 <ExternalLink className="w-4 h-4" />
-                View CV (Canva)
+                View CV
               </a>
               <a href="#contact" className="btn-outline w-full sm:w-auto text-center">
                 Get in Touch
