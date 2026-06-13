@@ -1,4 +1,4 @@
-import { Github, Linkedin, Mail, Download, MapPin, Phone } from 'lucide-react';
+import { Github, Linkedin, Mail, Download, MapPin, Phone, ExternalLink } from 'lucide-react';
 import { motion } from 'framer-motion';
 import headshot from '@/assets/headshot.jpg';
 export const Hero = () => {
@@ -81,6 +81,10 @@ export const Hero = () => {
               <a href="/Enoch_Lebabo_Academic_CV_2026.pdf" download="Enoch_Lebabo_Academic_CV_2026.pdf" className="btn-outline flex items-center justify-center gap-2 w-full sm:w-auto">
                 <Download className="w-4 h-4" />
                 Download CV
+              </a>
+              <a href="https://canva.link/gx4ol8xrfbg73th" target="_blank" rel="noopener noreferrer" className="btn-outline flex items-center justify-center gap-2 w-full sm:w-auto">
+                <ExternalLink className="w-4 h-4" />
+                View CV (Canva)
               </a>
               <a href="#contact" className="btn-outline w-full sm:w-auto text-center">
                 Get in Touch
